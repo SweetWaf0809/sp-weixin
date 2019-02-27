@@ -1,0 +1,41 @@
+<!--pages/sale/sale.wxml-->
+<!-- 8:00抢购 -->
+<scroll-view scroll-x='true' style='white-space:nowrap;display:flex;'  bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+  <view class='container'  scroll-x='true'>
+    <view class='text' wx:for='{{list}}' wx:key='index'>
+        <view>{{item.time}}</view>
+        <view>{{item.title}}</view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 昨日抢购爆品模块 -->
+  <view class='yester'>
+    <view class='yes_line1'>
+      <view></view>
+      <view></view>
+    </view>
+    <view class='yes_text'>
+      <view>昨日抢购爆品</view>
+      <view>8:00抢购已结束</view>
+    </view>
+    <view class='yes_line2'>
+      <view></view>
+      <view></view>
+    </view>
+  </view>
+  <!-- 8:00已结束的商品 -->
+  <view class='eight' wx:for='{{arr}}' wx:key='index'>
+    <image src='{{item.img_url}}'></image>
+    <view class='e_right'>
+      <view class='e_title'>
+        <text>{{item.discount}}折/</text>
+        <text>{{item.sname}}</text>
+        </view>
+      <view class='e_price'>
+          <text>￥{{item.price}}</text>
+          <text>￥{{item.ori_price}}</text>
+      </view>
+    </view>
+   </view>
+   
+  

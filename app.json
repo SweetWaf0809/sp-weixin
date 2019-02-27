@@ -1,0 +1,49 @@
+{
+  "pages": [
+        "pages/index/index",
+      "pages/sale/sale",
+
+      "pages/personal/personal",
+ 
+    "pages/shoplist/shoplist",
+    "pages/logs/logs",
+    "pages/car/car",
+    "pages/classify/classify"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E5004A",
+    "navigationBarTitleText": "速普商城",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/static/home.png",
+        "selectedIconPath": "pages/static/home-active.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "pages/static/message.png",
+        "selectedIconPath": "pages/static/message-active.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "pages/static/contact.png",
+        "selectedIconPath": "pages/static/contact-active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "pages/static/profile.png",
+        "selectedIconPath": "pages/static/profile-active.png"
+      }
+    ]
+  }
+}

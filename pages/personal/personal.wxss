@@ -1,0 +1,44 @@
+/* pages/personal/personal.wxss */
+.container{
+  width:100%;
+  height:280rpx;
+  background:#E5004A;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.container image{
+  width:140rpx;
+  height:140rpx;
+  border-radius: 50%;
+}
+/*项目条目*/
+.cell{
+  width:100%;
+  height:80rpx;
+  display: flex;
+  align-items: center;
+ background-color:#fff;
+ font-size:16px;
+}
+.cell-item image{
+  width:40rpx;
+  height:40rpx;
+  padding-left:20rpx;
+
+}
+.cell-item{
+  width:100%;
+  height:100%;
+    display: flex;
+  align-items: center;
+border-bottom:1rpx solid #ddd;
+}
+.cell-item>view{
+  width:84%;
+  color:#333;
+  font-size:14px;
+}
+.arrow{
+  padding-left:20rpx;
+}

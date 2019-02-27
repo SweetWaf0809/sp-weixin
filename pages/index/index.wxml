@@ -1,0 +1,70 @@
+<!--pages/home/home.wxml-->
+<!--<text>pages/home/home.wxml</text>-->
+<view class='container'>
+<!--轮播图 -->
+<view class='silder'>
+  <swiper autoplay='ture' interval='2500' indicator-dots='ture' >
+  <swiper-item wx:for='{{list}}' wx:key='id' >
+    <image src='{{item.img_url}}'  mode='aspectFill' lazy-load='true'>
+    </image>
+  </swiper-item>
+  </swiper>
+</view>
+<!-- 九宫格 -->
+<view class='index-nav'>
+<view class='nav-item'  wx:for="{{navlist}}" wx:key="id" >
+  <image bindtap='handleTap' data-id='{{item.id}}' src='{{item.img_url}}'></image>
+  <text>{{item.title}}</text>
+</view>
+</view>
+<!-- 分隔块 -->
+<view class='divider'></view>
+<!-- 整点抢购 -->
+<view class='block'>
+
+  <view class='b_top'>
+  <view>
+  <view class='b_text'>整点抢购</view>
+    <view class='time'>
+      <view>本场</view>
+      <view>03:04:08</view>
+    </view>
+ </view>
+</view>
+
+<scroll-view scroll-x="true">
+<view class='img' >
+  <view class='list' wx:for="{{block_img}}" wx:key="index">
+    <image src='{{item.img_url}}'></image>
+    <view class='new_price'>￥{{item.new_price}}</view>
+    <view class='ori_price'>￥{{item.ori_price}}</view>
+  </view>
+  
+
+</view>
+ </scroll-view>
+</view>
+<!-- 分隔块 -->
+<view class='divider'></view>
+<!-- 热卖专区 -->
+<view class='hot'>
+  <view class='hot_title'>热卖专区</view>
+  <view class='hot_img'>
+     <image src='http://127.0.0.1:3000/1543383010935.jpg' lazy-load='true' mode='aspectFill'></image>
+     <image src='http://127.0.0.1:3000/1545025673484.jpg' lazy-load='true' mode='aspectFill'></image>
+  </view>
+</view>
+<!-- 分隔块 -->
+<view class='divider'></view>
+
+
+
+
+
+
+
+
+
+</view>
+
+

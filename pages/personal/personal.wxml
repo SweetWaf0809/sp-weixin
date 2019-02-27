@@ -1,0 +1,60 @@
+<!--pages/personal/personal.wxml-->
+<view class='container'>
+<image src='http://127.0.0.1:3000/avatar.png'lazy-load='true' mode='aspectFill'></image>
+</view>
+<!--全部订单-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/file.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>全部订单</view>
+</view>
+</view>
+<!--亲子服务-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/gift.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>亲子服务</view>
+</view>
+</view>
+<!--我的优惠券-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/youhui.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>我的优惠券</view>
+</view>
+</view>
+<!--我的优惠券-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/shoucang.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>我的收藏</view>
+</view>
+</view>
+<!--我的优惠券-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/dizhi.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>地址管理</view>
+</view>
+</view>
+<!--我的优惠券-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/shouquan.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>授权绑定</view>
+</view>
+</view>
+<!--我的优惠券-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/anquan.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>安全中心</view>
+</view>
+</view>
+<!--我的优惠券-->
+<view class='cell'>
+<view class='cell-item'>
+<image src='http://127.0.0.1:3000/xinxi.png' lazy-load='true' mode='aspectFill'></image>
+ <view  class='arrow'>站内信息</view>
+</view>
+</view>

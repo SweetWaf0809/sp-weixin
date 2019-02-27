@@ -1,0 +1,27 @@
+/**app.wxss**/
+/*功能三：添加分割块*/
+.divider{
+  height:20rpx;
+  background:#f1f1f1;
+ 
+}
+/*通用功能二：截取超长名称*/
+.ell{
+  overflow: hidden;/*超出范围隐藏*/
+  white-space: nowrap;/*不允许换行*/
+  text-overflow: ellipsis;/*超出部分添加  ...*/
+}
+/*通用功能三：箭头*/
+.arrow{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content:"";
+  width: 20rpx;
+  height:20rpx;
+  border-top:3rpx solid #ccc;/*箭头边框*/
+  border-right:3rpx solid #ccc;/*箭头边框*/
+  transform:rotate(45deg);/*旋转45度*/
+}

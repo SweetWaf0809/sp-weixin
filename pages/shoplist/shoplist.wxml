@@ -1,0 +1,16 @@
+<!--pages/shoplist/shoplist.wxml-->
+<view class='container'>
+  <view class='img'>
+     <image src='http://127.0.0.1:3000/1539677747392.jpg' lazy-load='true' mode='aspectFill'></image>
+  </view>
+   <view class='divider'></view>
+      <view class='products'>
+        <view class='shop' wx:for='{{list}}' wx:key='index'>
+          <image class='shop-img' src='{{item.img_url}}'></image>
+          <view class='shop-title ell'>{{item.shop_title}}</view>
+          <view class='shop-price'>市场价￥{{item.shop_price}}</view>
+          <view class='new-price'>速普特惠价￥{{item.new_price}}</view>
+          <view class='divider'></view>
+        </view>
+   </view>
+</view>
